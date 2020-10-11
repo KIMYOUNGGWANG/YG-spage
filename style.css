@@ -1,34 +1,62 @@
 /* Global */
 
 :root {
-    /* color */
-    --color-white: #ffffff;
-    --color-light-white: #eeeeee;
-    --color-dark-white: #bdbdbd;
-    --color-mint: #cfebb7;
-    --color-sky-blue : #b4dbd5;
-    --color-dark-grey : #4d4d4d;
-    --color-dark : #0c0d0d;
-    --color-light-grey : #7c7979;
-    --color-yellow : #fff7d1;
-    --color-orange : #feb546;
+  /* color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-mint: #cfebb7;
+  --color-sky-blue: #b4dbd5;
+  --color-dark-grey: #4d4d4d;
+  --color-dark: #0c0d0d;
+  --color-light-grey: #7c7979;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
 
-    /* font size */
-    --font-large : 48px;
-    --font-medium : 28px;
-    --font-regular : 18px;
-    --font-small : 16px;
-    --font-micro : 14px;
+  /* font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
 
-    /* font weight */
-    --weight-bold : 700;
-    --weight-semi-bold : 600;
-    --weight-regular : 400;
-    /* size */
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  /* size */
 }
 
 /* Universal tags */
 * {
-    box-sizing:border-box;
+  box-sizing: border-box;
+}
 
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-dark);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-dark);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-dark);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-dark);
+  margin: 4px 0;
 }
