@@ -44,9 +44,19 @@ a {
   color: var(--color-white);
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 /* Typography */
 h1 {
@@ -85,6 +95,7 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  position: sticky;
 }
 
 .navbar__menu {
@@ -109,4 +120,33 @@ p {
 
 .navbar__item:hover {
   background-color: var(--color-dark-grey);
+}
+
+/* Home */
+
+#home {
+  background: url("images/KakaoTalk_12.jpg") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home_avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-dark);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--size-border-radius);
 }
