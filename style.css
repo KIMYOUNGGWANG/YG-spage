@@ -205,7 +205,7 @@ p {
 
 .major__icon:hover i {
   color: var(--color-orange);
-  transform: rotate(30deg) scale(1.1);
+  transform: rotate(-30deg) scale(1.1);
 }
 
 .major__icon i {
@@ -384,7 +384,7 @@ p {
 /* contact */
 
 #contact {
-  background-color: var(--color-mint);
+  background-color: var(--color-yellow);
 }
 
 .contact__title,
