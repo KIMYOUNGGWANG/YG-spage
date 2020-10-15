@@ -93,8 +93,8 @@ p {
 
 /* navbar */
 #navber {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /*정렬을 위한 컨테이너*/
+  justify-content: space-between; /*주 축 방향으로 정렬.*/
   background-color: var(--color-light-grey);
   align-items: center;
   color: var(--color-white);
@@ -109,7 +109,7 @@ p {
 
 .navbar__item {
   padding: 8px 12px;
-  margin: 0 4px;
+  margin: 0 10px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
 }
@@ -141,6 +141,7 @@ p {
   background: url("images/KakaoTalk_12.jpg") center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  background-attachment: fixed;
 }
 
 .home_avatar {
@@ -185,8 +186,8 @@ p {
 .major__icon {
   width: 170px;
   height: 170px;
+  line-height: 170px; /* height +line-height == 가운데정렬*/
   font-size: 70px;
-  line-height: 170px;
   margin: auto;
   border: 1px solid var(--color-sky-blue);
   border-radius: 50%;
@@ -210,28 +211,6 @@ p {
 
 .major__icon i {
   transition: var(--animation-duration);
-}
-
-.job {
-  display: flex;
-  align-items: center;
-}
-
-.job__description {
-  margin: 0 16px;
-  text-align: left;
-}
-
-.job__name,
-.job__period {
-  color: var(--color-light-grey);
-}
-.job__name {
-  font-size: var(--font-small);
-}
-
-.job__period {
-  font-size: var(--font-micro);
 }
 
 #skills {
@@ -402,6 +381,9 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
+.contact__links a {
+  color: var(--color-dark-grey);
+}
 .contact__links i:hover {
   transform: scale(1.1);
 }
