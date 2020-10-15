@@ -405,13 +405,21 @@ p {
   #navber {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-light-grey);
   }
 
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navber__menu.open {
+    display: block;
   }
 
   .about__majors {

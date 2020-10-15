@@ -4,8 +4,7 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height
 document.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-    console.log(navbarHeight);
+    
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     } else {
@@ -23,7 +22,33 @@ navbarMenu.addEventListener('click', (event) => {
     if (link==null) {
         return;
     }
-    console.log(event.target.dataset.link);
-    const scroll = document.querySelector(link);
+    navbarMenu.classList.remove('open');
+    scroll(link);
+});
+
+// navbar togglebtn
+const navbarToggleBtn = document.querySelector('.navber__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open');
+});
+
+
+// contact me 클릭하면 contact section으로 이동
+
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', () => {
+    scroll('#contact')
+})
+
+function scroll(selector) {
+    const scroll = document.querySelector(selector);
     scroll.scrollIntoView({behavior : "smooth", block: "end"});
+}
+
+//스크롤 내리면 투명해지는
+
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+    home.style.opacity = 1-window.scrollY / homeHeight; 
 });
